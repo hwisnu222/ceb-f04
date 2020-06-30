@@ -22,11 +22,18 @@ body {
 }
 
 .introduction {
-  text-align: center;
+  text-align: left;
 }
 
 .title {
   padding: 6px;
+  text-align: left;
+}
+
+.portrait {
+  float: right;
+  border-radius: 50%;
+  height: 325px;
 }
 
 /* describe */
@@ -159,15 +166,19 @@ p.introduction {
     text-align: center;
   }
 
-  .tosta {
-    border-radius: 100%;
-    margin-right: 0;
-  }
+.food {
+  height: 240px;
+}
 
-  .fabada {
-    border-radius: 100%;
-    margin-left: 0;
-  }
+.tosta {
+  border-radius: 50% 0 50% 50%;
+  margin-right: 10px;
+}
+
+.fabada {
+  border-radius: 0 50% 50% 50%;
+  margin-left: 10px;
+}
 
   .contact-details {
     display: flex;
