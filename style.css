@@ -1,35 +1,11 @@
 * {
   box-sizing: content-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
   background: url(https://i.imgur.com/MJAkxbh.png);
 }
 
-/* Header */
-.header {
-  background-color: #26d0c9;
-  color: #fff;
-  height: 90px;
-  position: sticky;
-  top: 0;
-}
-
-.header-logo {
-  font-size: 36px;
-  padding: 20px 40px;
-  float: left;
-}
-
-.header-list li {
-  float: left;
-  padding: 33px 20px;
-  list-style: none;
-}
-
-/* Main */
 .sample-map {
   width: 100%;
   height: 200px;
@@ -46,6 +22,7 @@ body {
 
 .introduction {
   text-align: left;
+  line-height: 1.55;
 }
 
 .title {
@@ -90,9 +67,10 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-family: Verdana;
+  font-family: Calibri;
   color: #90c53e;
-  font-weight: lighter;
+  font-weight: 100;
+  letter-spacing: 2.5px;
 }
 
 table {
@@ -143,18 +121,6 @@ p.introduction {
   border-radius: 0 50% 50% 50%;
 }
 
-.contact-details {
-  text-align: center;
-}
-
-.contact-phone {
-  text-align: center;
-}
-
-.contact-map {
-  text-align: center;
-}
-
 
 
 
@@ -201,19 +167,19 @@ p.introduction {
     text-align: center;
   }
 
-  .food {
-    height: 240px;
-  }
+.food {
+  height: 240px;
+}
 
-  .tosta {
-    border-radius: 50% 0 50% 50%;
-    margin-right: 10px;
-  }
+.tosta {
+  border-radius: 50% 0 50% 50%;
+  margin-right: 10px;
+}
 
-  .fabada {
-    border-radius: 0 50% 50% 50%;
-    margin-left: 10px;
-  }
+.fabada {
+  border-radius: 0 50% 50% 50%;
+  margin-left: 10px;
+}
 
   .contact-details {
     display: flex;
@@ -221,4 +187,38 @@ p.introduction {
     text-align: center;
   }
 
+}
+
+/* Header */
+header{
+  background-color: black;
+  color: #90c53e;
+  height:90px;
+  font-family: Calibri;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+}
+
+.header-logo{
+  font-size:36px;
+  padding:20px 40px;
+  float:left;
+}
+
+.header-list li{
+  float:left;
+  padding:33px 20px;
+  list-style: none;
+  font-weight: 100;
+}
+
+.header-list li:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.8;
 }
